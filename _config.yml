@@ -1,7 +1,7 @@
 # Site wide configuration
 
-title: "cenalulu's Tech Blog"
-description: "Collection of everythings I want to record down especially for tech"
+title: "PythonForPRML"
+description: "Interactive Python code for PRML, with something interesting I want to share"
 logo: logo.jpg # 120x120 px default image used for Twitter summary card
 teaser: /teaser/default.jpg # 400x250 px default teaser image used in image archive grid
 locale:
@@ -32,15 +32,14 @@ gems:
 
 # Site owner
 owner: 
-  name: cenalulu(卢钧轶)
-  email: cenalulu@gmail.com
-  twitter: cenalulu
+  name: Frank Hu (胡鹏程)
+  email: hupengcheng1993@126.com
   google:
     ad-client: "ca-pub-5984522345984184"
     ad-slot: "9439014959"
   bio: 
   avatar: logo.jpg # 160x160 px image for author byline
-disqus-shortname: cenalulu
+disqus-shortname: FrankHu
 
 
 exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]

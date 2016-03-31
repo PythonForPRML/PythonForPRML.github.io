@@ -5,18 +5,18 @@
   excerpt: 
   image: 
 
-- title: MySQL
-  url: /mysql/
+- title: PRML
+  url: /PRML/
+
+- title: Pylab
+  url: /PYLAB/
 
 - title: Linux
-  url: /linux/
+  url: /Linux/
 
-- title: Python
-  url: /python/
+- title: Algorithms
+  url: /Algorithms/
 
-- title: Jekyll
-  url: /jekyll/
-
-- title: About Me
-  url: /about/
+- title: SICP
+  url: /SICP/
 

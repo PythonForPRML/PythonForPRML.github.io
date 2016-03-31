@@ -1,7 +1,7 @@
 ---
 layout: article
 title:  "全局唯一ID生成方案对比"
-categories: mysql
+categories: prml
 toc: true
 ads: true
 image:

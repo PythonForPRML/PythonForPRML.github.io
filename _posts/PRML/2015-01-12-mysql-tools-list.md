@@ -1,7 +1,7 @@
 ---
 layout: article
 title:  "MySQL工具汇总"
-categories: mysql
+categories: prml
 image:
     teaser: /mysql/mysql-tool.png
 ---
