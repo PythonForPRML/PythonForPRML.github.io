@@ -1,4 +1,5 @@
-$("script[type='math/tex']").replaceWith(
+$(function(){
+  $("script[type='math/tex']").replaceWith(
   function(){
     var tex = $(this).text();
     return "<span class=\"inline-equation\">" + 
@@ -12,4 +13,5 @@ $("script[type='math/tex; mode=display']").replaceWith(
     return "<div class=\"equation\">" + 
            katex.renderToString("\\displaystyle "+tex) +
            "</div>";
+})
 });

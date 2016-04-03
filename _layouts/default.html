@@ -43,33 +43,12 @@
       <script src="{{ site.url }}/js/vendor/html5shiv.min.js"></script>
       <script src="{{ site.url }}/js/vendor/respond.min.js"></script>
     <![endif]-->
-
-
-  
-  <!-- Load [jQuery](http://jquery.com) -->
-
-  {% javascript jquery/dist/jquery.min.js %}
-  <!-- Load Readable theme from [bootswatch](http://bootswatch.com) -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.6/readable/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/css/bootswatch.min.css">
-  <script src="/assets/js/bootswatch.min.js"></script>
-  <!-- Load [Bootstrap javascript](http://getbootstrap.com/getting-started/) -->
-  {% javascript bootstrap-sass/assets/javascripts/bootstrap.min.js %}
-  <!-- Load [font awesome](http://fontawesome.io/) -->
-  {% stylesheet font-awesome/css/font-awesome.min.css %}
-  <!-- Load [KaTeX](https://github.com/Khan/KaTeX) -->
-  {% stylesheet KaTeX/dist/katex.min.css %}
-  {% javascript KaTeX/dist/katex.min.js %}
-  <script async type="text/javascript" src="{% asset_path katex_render.js %}"></script>
-  <!-- Load custom css -->
-  <link rel="stylesheet" href="/assets/css/custom.min.css">
-
-  <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-
+    <!-- Load jQuery -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Load KaTeX -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+    <script src="{{ site.url }}/js/katex_render.js"></script>
   </head>
 
   <body>
