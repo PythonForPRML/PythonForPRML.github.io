@@ -22,9 +22,9 @@ sass:
     sass_dir: _sass
     style: compressed
 permalink: /:categories/:title/
-markdown: redcarpet
-#kramdown:
-#    input: GFM
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
 highlighter: rouge
 gems:
   - jekyll-sitemap
