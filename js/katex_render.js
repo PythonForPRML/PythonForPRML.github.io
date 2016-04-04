@@ -1,4 +1,11 @@
 $(function(){
+  $("script[type='math/tex; mode=display']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    return "<div class=\"equation\">" + 
+           katex.renderToString("\\displaystyle "+tex) +
+           "</div>";
+});
   $("script[type='math/tex']").replaceWith(
   function(){
     var tex = $(this).text();
@@ -6,15 +13,6 @@ $(function(){
            katex.renderToString(tex) +
            "</span>";
 });
-});
 
 
-$(function(){
-$("script[type='math/tex; mode=display']").replaceWith(
-  function(){
-    var tex = $(this).text();
-    return "<div class=\"equation\">" + 
-           katex.renderToString("\\displaystyle "+tex) +
-           "</div>";
-});
 });
