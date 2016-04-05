@@ -7,3 +7,12 @@ gem 'sass'
 gem 'bourbon'
 gem 'neat'
 gem 'octopress', '~> 3.0.0.rc.12'
+
+
+# Middleman Gems
+gem 'middleman', '>= 4.0.0'
+gem 'middleman-livereload'
+gem 'middleman-sprockets', '4.0.0.rc.1'
+gem 'middleman-autoprefixer'
+gem 'middleman-syntax'
+gem 'middleman-blog'

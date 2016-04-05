@@ -24,8 +24,9 @@ sass:
 permalink: /:categories/:title/
 markdown: kramdown
 kramdown:
+  input : GFM
   math_engine: mathjax
-highlighter: rouge
+  syntax_highlighter: rouge
 gems:
   - jekyll-sitemap
 
