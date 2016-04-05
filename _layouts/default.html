@@ -21,6 +21,9 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
+
+
+    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
     <style>
     .sliding-menu-content {
       top: 0;
@@ -35,9 +38,11 @@
       -o-transform: translateX(100%);
       transform: translateX(100%);
     }
-    </style>
+    .highlight {
+        overflow-x: scroll
+    }
 
-    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+    </style>
     <!-- HTML5 Shiv and Media Query Support for IE -->
     <!--[if lt IE 9]>
       <script src="{{ site.url }}/js/vendor/html5shiv.min.js"></script>
