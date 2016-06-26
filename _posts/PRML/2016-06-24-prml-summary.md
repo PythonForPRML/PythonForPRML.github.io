@@ -27,6 +27,8 @@ time: 2016-4-6
 
 [核化法——kernel method](http://pythonforprml.github.io/prml/Kernel-Method-(Part-1)/)
 
+[高斯核的自动参数优化](http://pythonforprml.github.io/prml/auto-selection-of-rbf-kernel-parameter/)
+
 ### 2.SVM
 
 [SVM](http://pythonforprml.github.io/prml/svm/)
