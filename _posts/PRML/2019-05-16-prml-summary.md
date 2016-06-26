@@ -56,6 +56,7 @@ time: 2016-4-6
 [概率生成模型](http://pythonforprml.github.io/prml/4.2-Probabilistic-Generative-Models/)
 
 [多变量高斯分布](http://pythonforprml.github.io/prml/Multivariate-normal-distribution/)
+
 [k近邻](http://pythonforprml.github.io/prml/K-nearest-neighbors/)
 
 [贝叶斯分类器](http://pythonforprml.github.io/prml/Bayesian_classifier/)
