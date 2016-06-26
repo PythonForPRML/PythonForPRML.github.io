@@ -25,7 +25,7 @@ time: 2016-4-6
 ## 一、kernel method
 ### 1.核化法
 
-[核化法——kernel method](http://pythonforprml.github.io/prml/Kernel-Method-(Part-1)/)
+[核化法——kernel method](http://pythonforprml.github.io/prml/Kernel-Method/)
 
 [高斯核的自动参数优化](http://pythonforprml.github.io/prml/auto-selection-of-rbf-kernel-parameter/)
 
