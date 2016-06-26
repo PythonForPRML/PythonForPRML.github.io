@@ -47,11 +47,11 @@ time: 2016-4-6
 
 ## 二、聚类与隐含变量
 
-### 1.[混合高斯模型](http://pythonforprml.github.io/prml/mixture-gaussian/)
+ 1.[混合高斯模型](http://pythonforprml.github.io/prml/mixture-gaussian/)
 
-### 2.[k-means](http://pythonforprml.github.io/prml/K-Means/)
+ 2.[k-means](http://pythonforprml.github.io/prml/K-Means/)
 
-### 3.[EM](http://pythonforprml.github.io/prml/EM/)
+ 3.[EM](http://pythonforprml.github.io/prml/EM/)
 
 
 ## 三、其他
