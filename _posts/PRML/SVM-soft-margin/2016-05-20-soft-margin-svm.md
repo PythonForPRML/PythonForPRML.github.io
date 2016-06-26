@@ -237,7 +237,7 @@ scatter(X[indexOfClass2,0],X[indexOfClass2,1],color='b')
 
 
 
-![png](/images/PRML/SVM-soft-margin//images/PRML/SVM-soft-margin/output_8_1.png)
+![png](/images/PRML/SVM-soft-margin/images/PRML/SVM-soft-margin/output_8_1.png)
 
 
 
@@ -363,7 +363,7 @@ show()
 
 
 
-![png](/images/PRML/SVM-soft-margin//images/PRML/SVM-soft-margin/output_9_1.png)
+![png](/images/PRML/SVM-soft-margin/images/PRML/SVM-soft-margin/output_9_1.png)
 
 
 
