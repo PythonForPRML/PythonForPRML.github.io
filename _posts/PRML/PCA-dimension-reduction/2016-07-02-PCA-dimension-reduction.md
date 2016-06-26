@@ -1,6 +1,6 @@
 ---
 layout: article
-title:  "利用PCA来进行降维"
+title:  "PCA for dimension reduction"
 categories: prml
 time: 2016-4-6
 ---
