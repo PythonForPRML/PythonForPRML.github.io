@@ -1,9 +1,10 @@
 ---
 layout: article
-title:  "PCA for dimension reduction"
+title:  "Dimension Reduction use PCA"
 categories: prml
 time: 2016-4-6
 ---
+
 
 
 # 一、不相关维度降维(unrelated dimension reduction)
