@@ -28,6 +28,7 @@ $$\phi(X)=\phi([x_1,x_2]^T)=Z=[z_1,z_2,z_3]^T=[x_1^2,\sqrt{2}x_1x_2,x_2^2]$$
 此时利用这个特征映射，将原空间的决策边界进行映射之后有：
 
 $$\frac{x_1^2}{a^2}+\frac{x_2^2}{b^2}=1 \rightarrow \frac{1}{a^2}z_1+0*z_2+\frac{1}{b^2}z^3=1$$
+
 决策边界变为三维空间中Z1Z3平面中一条直线，而原空间中的属于不同类别的点还是分在决策边界的两边。
 
 
@@ -36,7 +37,7 @@ $$\frac{x_1^2}{a^2}+\frac{x_2^2}{b^2}=1 \rightarrow \frac{1}{a^2}z_1+0*z_2+\frac
 ## 三、 kernel function
 
 > kernel function 的记法为 $$k(x_1,x_2)$$,表示原空间中$$x_1$$,$$x_2$$这两个点经过feature mapping之后在特征空间中对应的点的内积。
->即$$k(x_1,x_2)=\phi^T(x_1)\phi(x_2)$$
+>即 $$k(x_1,x_2)=\phi^T(x_1)\phi(x_2)$$
 
 对于上面我们提到的那个feature mapping 函数来说，如下图所示，其对应的kernel function 为 $$k(x_1,x_2)=(x_1^Tx_2)^2$$
 
@@ -61,7 +62,7 @@ $$\frac{x_1^2}{a^2}+\frac{x_2^2}{b^2}=1 \rightarrow \frac{1}{a^2}z_1+0*z_2+\frac
 
 ## 四、feature mapping与kernel function的比较
 
-> Mercer's theorem
+> Mercer s theorem
 >kernel function 与feature mapping函数是一一对应的。$$k(x_1,x_2)=<\phi(x_1),\phi(x_2)>$$
 
 也就是说我们在实际工程中，只要知道feature mapping与kernel function之一即可。
@@ -115,11 +116,11 @@ $$\sum_{n=1}^N \{ W^T\phi(X_n)-t_n \}\phi(X_n)+\lambda W=0\\
 $$a_n=-\frac{1}{\lambda}\sum_{n=1}^N \{ W^T\phi(X_n)-t_n \}$$
 将$$W=\Phi^T\mathbf{a}$$代入$$J(W)$$可以得到如下的式子，使用$$\mathbf{a}$$来表示误差平方和函数就是所谓的dual representation
 
-$$J(\mathbf{a})=\frac{1}{2}\mathbf{a}^T \Phi \Phi ^T \Phi \Phi ^T \mathbf{a}-\mathbf{a}^T\Phi \Phi ^T \mathbf{t}+\frac{1}{2}\mathbf{t}^T\mathbf{t}+\frac{\lambda}{2}\mathbf{a}^T \Phi \Phi ^T \mathbf{a}$$
+$$ J(a)= \frac{1}{2}\mathbf{a}^T \Phi \Phi ^T \Phi \Phi ^T \mathbf{a}-\mathbf{a}^T\Phi \Phi ^T \mathbf{t}+\frac{1}{2}\mathbf{t}^T\mathbf{t}+\frac{\lambda}{2}\mathbf{a}^T \Phi \Phi ^T \mathbf{a}$$
 
-其中 $$\mathbf{t}=(t_1,...,t_n)^T$$,又因为$$K=\Phi \Phi ^T$$
+其中 $$ \mathbf {t}=(t_1,...,t_n)^T$$,又因为$$K=\Phi \Phi ^T$$
 
-$$J(\mathbf{a})=\frac{1}{2}\mathbf{a}^T \mathbf{K}\mathbf{K} \mathbf{a}-\mathbf{a}^T \mathbf{K} \mathbf{t}+\frac{1}{2}\mathbf{t}^T\mathbf{t}+\frac{\lambda}{2}\mathbf{a}^T \mathbf{K} \mathbf{a}$$
+$$J( \mathbf {a})=\frac{1}{2}\mathbf{a}^T \mathbf{K}\mathbf{K} \mathbf{a}-\mathbf{a}^T \mathbf{K} \mathbf{t}+\frac{1}{2}\mathbf{t}^T\mathbf{t}+\frac{\lambda}{2}\mathbf{a}^T \mathbf{K} \mathbf{a}$$
 
 令$$J(\mathbf{a})$$对$$\mathbf{a}$$的导数为0，我们可以得到：
 
