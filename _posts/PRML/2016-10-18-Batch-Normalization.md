@@ -15,7 +15,7 @@ This post is written by kratzert, origin [url](https://kratzert.github.io/2016/0
 One Topic, which kept me quite busy for some time was the implementation of [Batch Normalization](http://arxiv.org/abs/1502.03167), especially the backward pass. Batch Normalization is a technique to provide any layer in a Neural Network with inputs that are zero mean/unit variance - and this is basically what they like! But BatchNorm consists of one more step which makes this algorithm really powerful. Let's take a look at the BatchNorm Algorithm:
 
 <div class="fig figcenter fighighlight">
-  <img src="/images/bn_backpass/bn_algorithm.PNG">
+  <img src="/images/bn_backpass/bn_algorithm.png">
   <div class="figcaption"><br> Algorithm of Batch Normalization copied from the Paper by Ioffe and Szegedy mentioned above.<br>
   </div>
 </div>
@@ -94,7 +94,7 @@ For all who kept on reading until now (congratulations!!), we are close to arriv
 To fully understand the channeling of the gradient backwards through the BatchNorm-Layer you should have some basic understanding of what the [Chain rule](https://en.wikipedia.org/wiki/Chain_rule) is. As a little refresh follows one figure that exemplifies the use of chain rule for the backward pass in computational graphs.
 
 <div class="fig figcenter fighighlight">
-  <img src="/images/bn_backpass/chainrule_example.PNG">
+  <img src="/images/bn_backpass/chainrule_example.png">
   <div class="figcaption"><br>The forwardpass on the left in calculates `z` as a function `f(x,y)` using the input variables `x` and `y` (This could literally be any function, examples are shown in the BatchNorm-Graph above). The right side of the figures shows the backwardpass. Receiving `dL/dz`, the gradient of the loss function with respect to `z` from above, the gradients of `x` and `y` on the loss function can be calculate by applying the chain rule, as shown in the figure.<br>
   </div>
 </div>
@@ -249,9 +249,8 @@ def batchnorm_backward(dout, cache):
 
 # Some final words
 
-First of all I would like to thank the team of the cs231n class, that gratefully make all the material freely available. This gives people like me the possibility to take part in high class courses and learn a lot about deep learning in self-study.
-(Secondly it made me motivated to write my first blog post!)
+这篇转载的文章非常好，可以结合我之前写的那篇反向传播求偏导的数学本质来一起看。这篇文章的作者提出了非常好的一种观点，将复杂的layer转变成一个计算过程的Graph出来，每步只做最简单的计算，逐步进行反向传播。
 
-And as we have already passed the deadline for the second assignment, I might upload my code during the next days on github.
+
 
 
